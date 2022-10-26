@@ -1,6 +1,20 @@
 {% block content %}
 <h1>Register</h1>
 <h4>Enter Student Information below</h4>
-<!--Form to request user's name-->
+
+<form action="/studentdetails" method="POST" target="">
+    <label for="sname">Enter name:</label>
+    <input type="text" name= "sname" id = "sname">
+    <label for = "organization">Enter organization: </label>
+    <select name="organization" id="organization">
+        <option value="The Boxing Academy"> The Boxing Academy</option>
+        <option value="The Master Grapplers"> The Master Grapplers</option>
+        <option value="The Jiu Jitsu Gym"> The Jiu Jitsu Gym</option>
+        <option value="The Judo Mat"> The Judo Mat</option>
+        <option value="The Muay Thai Club"> The Muay Thai Club</option>
+
+    </select>
+    <input type="submit" value="Register">
+</form>
 
 {% endblock %}

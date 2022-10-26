@@ -1,4 +1,9 @@
 {% block content %}
 <h1>Home</h1>
-
+<p>Enter an integer vaule:</p>
+<form action="/result" method="POST" target="">
+    <label for="number">Enter Number:</label>
+    <input type="text" name="number" id = "number">
+    <input type="submit" value="Submit">
+</form>
 {% endblock %}
